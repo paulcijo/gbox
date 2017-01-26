@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
 	def index
+		@projects = Project.all
 	end
 
 	def new
@@ -20,6 +21,14 @@ class ProjectsController < ApplicationController
 
 	def show
 		@project = Project.find(params[:id])
+	end
+
+	def destroy
+		@project = Project.find(params[:id])
+		@project.destroy
+
+		flash[:alert] = "Project just got deleted."
+		redirect_to projects_path
 	end
 
 	private 

@@ -1,1 +1,8 @@
 <%= link_to "Add New Project", new_project_path %>
+
+<div id = "projects">
+	<% @projects.each do |project| %>
+		<h2><%= link_to project.website, project %></h2>
+		<p><%= project.keyword %></p>
+	<% end %>
+</div>
