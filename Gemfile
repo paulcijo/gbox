@@ -33,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem "bootstrap-sass", "~> 3.3"
 gem 'simple_form', '~> 3.4'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
