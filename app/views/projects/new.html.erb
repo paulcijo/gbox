@@ -15,11 +15,11 @@ prohibited this project from being saved:</h2>
 <%= form_for(@project) do |f| %>
 	<p>
 		<%= f.label :website %><br/>
-		<%= f.text_field :website %>
+		<%= f.text_field :website, placeholder: "Your website address" %>
 	</p>
 	<p>
 		<%= f.label :keyword %><br/>
-		<%= f.text_field :keyword %>
+		<%= f.text_field :keyword , placeholder: "Primary Keyword" %>
 	</p>
-	<%= f.submit %>
+	<%= f.submit class: "btn btn-success" %>
 <% end %>
